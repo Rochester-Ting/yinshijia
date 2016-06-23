@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cancel" rowHeight="72" id="KGk-i7-Jjw" customClass="RRCancelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="饭店的名字" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOy-Iv-vV8">
+                        <rect key="frame" x="10" y="10" width="75" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="5vD-HF-2zM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyF-ga-UpR">
+                        <rect key="frame" x="10" y="37" width="24" height="24.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h3-7K-q6z">
+                        <rect key="frame" x="44" y="37" width="24" height="24.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="QyF-ga-UpR" secondAttribute="bottom" constant="10" id="6LQ-cD-a7S"/>
+                    <constraint firstItem="DOy-Iv-vV8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8bk-ca-OJR"/>
+                    <constraint firstItem="5h3-7K-q6z" firstAttribute="top" secondItem="DOy-Iv-vV8" secondAttribute="bottom" constant="10" id="GvN-PK-tPX"/>
+                    <constraint firstItem="DOy-Iv-vV8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="H0b-OC-nDA"/>
+                    <constraint firstItem="5h3-7K-q6z" firstAttribute="leading" secondItem="QyF-ga-UpR" secondAttribute="trailing" constant="10" id="IkR-UW-fHp"/>
+                    <constraint firstItem="QyF-ga-UpR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fzH-88-Sof"/>
+                    <constraint firstItem="QyF-ga-UpR" firstAttribute="top" secondItem="DOy-Iv-vV8" secondAttribute="bottom" constant="10" id="kh6-kR-e2y"/>
+                    <constraint firstAttribute="bottom" secondItem="5h3-7K-q6z" secondAttribute="bottom" constant="10" id="yXF-ma-dNZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="address" destination="QyF-ga-UpR" id="2wE-d8-xiS"/>
+                <outlet property="name" destination="DOy-Iv-vV8" id="vZN-OD-S7f"/>
+                <outlet property="time" destination="5h3-7K-q6z" id="Mk0-J6-8F8"/>
+            </connections>
+            <point key="canvasLocation" x="243" y="258"/>
+        </tableViewCell>
+    </objects>
+</document>

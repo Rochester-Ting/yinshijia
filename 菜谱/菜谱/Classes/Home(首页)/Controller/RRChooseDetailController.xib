@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RRChooseDetailController">
+            <connections>
+                <outlet property="buyBtn" destination="Gup-To-8GS" id="GeI-fv-DRE"/>
+                <outlet property="moneyLabel" destination="xPB-ab-dfH" id="vpY-Bq-BJj"/>
+                <outlet property="price" destination="xPB-ab-dfH" id="HLo-8b-ZV3"/>
+                <outlet property="tableView" destination="OUc-fn-gxP" id="rLJ-Uy-XLZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OUc-fn-gxP">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pm3-h5-UX9">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOs-oB-8oz">
+                            <rect key="frame" x="10" y="11" width="11" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPB-ab-dfH">
+                            <rect key="frame" x="31" y="12" width="42" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.1555396137" blue="0.2274227227" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gup-To-8GS">
+                            <rect key="frame" x="530" y="4" width="60" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="H5i-0b-eyl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="定制" backgroundImage="picker_button_orange">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="buyBtn:" destination="-1" eventType="touchUpInside" id="QMh-UH-GGp"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Lp-fp-Sxe">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="7WZ-J6-As1"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="0Lp-fp-Sxe" firstAttribute="top" secondItem="pm3-h5-UX9" secondAttribute="top" id="3G4-0n-aC6"/>
+                        <constraint firstAttribute="height" constant="44" id="6it-bw-6Hh"/>
+                        <constraint firstItem="QOs-oB-8oz" firstAttribute="centerY" secondItem="pm3-h5-UX9" secondAttribute="centerY" id="Fp9-xY-qkO"/>
+                        <constraint firstAttribute="bottom" secondItem="Gup-To-8GS" secondAttribute="bottom" constant="4" id="L2e-k7-usq"/>
+                        <constraint firstItem="xPB-ab-dfH" firstAttribute="leading" secondItem="QOs-oB-8oz" secondAttribute="trailing" constant="10" id="N6X-8g-sQZ"/>
+                        <constraint firstAttribute="trailing" secondItem="Gup-To-8GS" secondAttribute="trailing" constant="10" id="QWt-Ij-L08"/>
+                        <constraint firstItem="QOs-oB-8oz" firstAttribute="leading" secondItem="pm3-h5-UX9" secondAttribute="leading" constant="10" id="WhA-FI-oRi"/>
+                        <constraint firstItem="0Lp-fp-Sxe" firstAttribute="leading" secondItem="pm3-h5-UX9" secondAttribute="leading" id="Ywz-Rm-cFo"/>
+                        <constraint firstItem="QOs-oB-8oz" firstAttribute="centerY" secondItem="xPB-ab-dfH" secondAttribute="centerY" id="Zm3-qa-kJF"/>
+                        <constraint firstAttribute="trailing" secondItem="0Lp-fp-Sxe" secondAttribute="trailing" id="ala-Dt-LPq"/>
+                        <constraint firstAttribute="bottom" secondItem="QOs-oB-8oz" secondAttribute="bottom" constant="10" id="ead-zU-u5J"/>
+                        <constraint firstItem="Gup-To-8GS" firstAttribute="top" secondItem="pm3-h5-UX9" secondAttribute="top" constant="4" id="ySB-9z-UCQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pm3-h5-UX9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4VA-b0-5bH"/>
+                <constraint firstItem="OUc-fn-gxP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mib-gh-kU6"/>
+                <constraint firstAttribute="bottom" secondItem="pm3-h5-UX9" secondAttribute="bottom" id="S01-eb-kMy"/>
+                <constraint firstAttribute="bottom" secondItem="OUc-fn-gxP" secondAttribute="bottom" id="hQF-Uo-1wU"/>
+                <constraint firstAttribute="trailing" secondItem="OUc-fn-gxP" secondAttribute="trailing" id="joK-wz-24F"/>
+                <constraint firstItem="OUc-fn-gxP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="l55-Ul-4th"/>
+                <constraint firstAttribute="trailing" secondItem="pm3-h5-UX9" secondAttribute="trailing" id="x81-RO-UXl"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="picker_button_orange" width="22" height="19"/>
+    </resources>
+</document>

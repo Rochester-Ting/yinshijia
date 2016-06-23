@@ -1,0 +1,44 @@
+//
+//  pch.pch
+//  菜谱
+//
+//  Created by 丁瑞瑞 on 12/3/16.
+//  Copyright © 2016年 Rochester. All rights reserved.
+//
+#import "UIView+Frame.h"
+#import "RRConst.h"
+#import "EaseMob.h"
+#ifndef pch_pch
+#define pch_pch
+
+#ifdef __OBJC__
+
+
+#ifdef DEBUG
+
+#define RRLog(...) NSLog(__VA_ARGS__)
+#define screenH [UIScreen mainScreen].bounds.size.height
+#define screenW [UIScreen mainScreen].bounds.size.width
+#define RRLogFunc RRLog(@"%s", __func__);
+#define server_ip @"http://112.65.246.170/goodluck"
+
+
+#define changeUserInfo [NSString stringWithFormat:@"%@/changeUserInfo?VER=%@&PT_ID=%@",server_ip,VER,PT_ID]
+#define ScreenMarco_h
+
+#define KscreenSize  ([UIScreen mainScreen].bounds.size)
+
+#define KscreenWidth  (KscreenSize.width)
+
+#define KscreenHeight  (KscreenSize.height)
+
+#else
+
+
+#define RRLog(...)
+
+
+#endif
+
+#endif /* pch_pch */
+#endif

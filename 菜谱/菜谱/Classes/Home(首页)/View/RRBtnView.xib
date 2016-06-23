@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RRBtnView">
+            <rect key="frame" x="0.0" y="0.0" width="135.5" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNm-ZH-Psi">
+                    <rect key="frame" x="0.0" y="0.0" width="67.5" height="36"/>
+                    <state key="normal" title="最热">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.1555396137" blue="0.2274227227" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="hotBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="07r-Nf-f4i"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o3Z-8V-Mn3">
+                    <rect key="frame" x="67.5" y="4" width="1" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="KVD-52-rsE"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NT7-42-fcf">
+                    <rect key="frame" x="68.5" y="0.0" width="67" height="36"/>
+                    <state key="normal" title="最新">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" red="1" green="0.1555396137" blue="0.2274227227" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="newBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xo3-pk-ISr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NT7-42-fcf" secondAttribute="trailing" id="3Ud-pJ-AzB"/>
+                <constraint firstItem="pNm-ZH-Psi" firstAttribute="width" secondItem="NT7-42-fcf" secondAttribute="width" id="6fw-iC-CKq"/>
+                <constraint firstItem="NT7-42-fcf" firstAttribute="leading" secondItem="o3Z-8V-Mn3" secondAttribute="trailing" id="7hg-jF-B0x"/>
+                <constraint firstAttribute="bottom" secondItem="o3Z-8V-Mn3" secondAttribute="bottom" constant="4" id="CzL-ma-fJc"/>
+                <constraint firstItem="NT7-42-fcf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GTE-DY-JhT"/>
+                <constraint firstAttribute="bottom" secondItem="NT7-42-fcf" secondAttribute="bottom" id="LaZ-Tp-gDD"/>
+                <constraint firstAttribute="bottom" secondItem="pNm-ZH-Psi" secondAttribute="bottom" id="SYw-N7-uA8"/>
+                <constraint firstItem="o3Z-8V-Mn3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="SZE-e2-825"/>
+                <constraint firstItem="pNm-ZH-Psi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gCU-9g-DtI"/>
+                <constraint firstItem="o3Z-8V-Mn3" firstAttribute="leading" secondItem="pNm-ZH-Psi" secondAttribute="trailing" id="q5v-C8-wwc"/>
+                <constraint firstItem="pNm-ZH-Psi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uN2-dC-ykh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="hot" destination="pNm-ZH-Psi" id="dCz-xr-FXL"/>
+                <outlet property="zuixin" destination="NT7-42-fcf" id="Xn0-6c-mZl"/>
+            </connections>
+            <point key="canvasLocation" x="42.75" y="-29"/>
+        </view>
+    </objects>
+</document>

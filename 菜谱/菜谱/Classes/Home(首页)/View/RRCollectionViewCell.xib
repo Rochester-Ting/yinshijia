@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RR" id="CS7-rm-abr" customClass="RRCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="199" height="234"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="199" height="234"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lXI-Xn-stp" userLabel="背景">
+                        <rect key="frame" x="0.0" y="0.0" width="199" height="234"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FOp-kU-hFk" userLabel="图片">
+                        <rect key="frame" x="2" y="2" width="195" height="160"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m32-FY-wLP">
+                        <rect key="frame" x="2" y="162" width="195" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1x-PD-U85">
+                                <rect key="frame" x="3" y="38" width="189" height="29"/>
+                                <string key="text">绮•玖的主人Kino学设计出身，在奢侈品公关界闯荡了八年，因对美食的热爱，她开了自己的私房料理。 师承川菜名家邓华东，从古籍旧文中发现灵感，她相信当年秦淮画舫上的精致小菜，是当年江南才子们的巅峰美馔。 店内布置典雅别致，古色古香。从字形娟秀的手书菜单，到雕花繁复的屏风，小巧精致的山茶花团扇，无不透露出Kino的匠心巧思。 </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="475人预订,38人喜欢" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBp-Q6-IIY">
+                                <rect key="frame" x="3" y="23" width="189" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绮·玖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYJ-Qk-9tQ">
+                                <rect key="frame" x="3" y="3" width="189" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.87680288461538458" green="0.87680288461538458" blue="0.87680288461538458" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="b1x-PD-U85" firstAttribute="top" secondItem="yBp-Q6-IIY" secondAttribute="bottom" constant="1" id="7jR-KS-fFB"/>
+                            <constraint firstItem="b1x-PD-U85" firstAttribute="leading" secondItem="m32-FY-wLP" secondAttribute="leading" constant="3" id="9IP-oG-kOp"/>
+                            <constraint firstItem="yBp-Q6-IIY" firstAttribute="leading" secondItem="m32-FY-wLP" secondAttribute="leading" constant="3" id="ExH-xf-C3z"/>
+                            <constraint firstItem="XYJ-Qk-9tQ" firstAttribute="leading" secondItem="m32-FY-wLP" secondAttribute="leading" constant="3" id="JET-Tb-OSU"/>
+                            <constraint firstItem="XYJ-Qk-9tQ" firstAttribute="top" secondItem="m32-FY-wLP" secondAttribute="top" constant="3" id="QWz-W6-b0c"/>
+                            <constraint firstAttribute="height" constant="70" id="dep-Jc-LFQ"/>
+                            <constraint firstAttribute="trailing" secondItem="b1x-PD-U85" secondAttribute="trailing" constant="3" id="fm2-Kn-EZa"/>
+                            <constraint firstAttribute="trailing" secondItem="XYJ-Qk-9tQ" secondAttribute="trailing" constant="3" id="fwy-2Y-jtU"/>
+                            <constraint firstAttribute="bottom" secondItem="b1x-PD-U85" secondAttribute="bottom" constant="3" id="lIo-tF-yd4"/>
+                            <constraint firstAttribute="trailing" secondItem="yBp-Q6-IIY" secondAttribute="trailing" constant="3" id="qXw-6l-Pfb"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5f-Oa-7BD" customClass="DALabeledCircularProgressView">
+                        <rect key="frame" x="69.5" y="52" width="60" height="60"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="bRb-m2-25t"/>
+                            <constraint firstAttribute="width" constant="60" id="jsQ-lY-PYs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="m32-FY-wLP" firstAttribute="leading" secondItem="CS7-rm-abr" secondAttribute="leading" constant="2" id="7ry-8C-cE1"/>
+                <constraint firstItem="FOp-kU-hFk" firstAttribute="leading" secondItem="CS7-rm-abr" secondAttribute="leading" constant="2" id="GJX-cH-88J"/>
+                <constraint firstItem="lXI-Xn-stp" firstAttribute="leading" secondItem="CS7-rm-abr" secondAttribute="leading" id="NZu-yA-3NV"/>
+                <constraint firstItem="m32-FY-wLP" firstAttribute="top" secondItem="FOp-kU-hFk" secondAttribute="bottom" id="PQS-pB-FEo"/>
+                <constraint firstItem="C5f-Oa-7BD" firstAttribute="centerX" secondItem="FOp-kU-hFk" secondAttribute="centerX" id="Q5X-RK-Eav"/>
+                <constraint firstAttribute="trailing" secondItem="m32-FY-wLP" secondAttribute="trailing" constant="2" id="SUN-dj-WII"/>
+                <constraint firstItem="C5f-Oa-7BD" firstAttribute="centerY" secondItem="FOp-kU-hFk" secondAttribute="centerY" id="cJ2-Wt-Utj"/>
+                <constraint firstAttribute="bottom" secondItem="lXI-Xn-stp" secondAttribute="bottom" id="jgk-KU-1bz"/>
+                <constraint firstItem="FOp-kU-hFk" firstAttribute="top" secondItem="CS7-rm-abr" secondAttribute="top" constant="2" id="jyA-02-0NI"/>
+                <constraint firstAttribute="trailing" secondItem="FOp-kU-hFk" secondAttribute="trailing" constant="2" id="oAE-AT-KBi"/>
+                <constraint firstAttribute="trailing" secondItem="lXI-Xn-stp" secondAttribute="trailing" id="oVn-Bx-13a"/>
+                <constraint firstAttribute="bottom" secondItem="m32-FY-wLP" secondAttribute="bottom" constant="2" id="r9h-zI-PLm"/>
+                <constraint firstItem="lXI-Xn-stp" firstAttribute="top" secondItem="CS7-rm-abr" secondAttribute="top" id="raL-6m-18c"/>
+            </constraints>
+            <size key="customSize" width="199" height="234"/>
+            <connections>
+                <outlet property="introductionLabel" destination="b1x-PD-U85" id="ldA-Z5-0ZZ"/>
+                <outlet property="likeLabel" destination="yBp-Q6-IIY" id="E7R-aq-OQl"/>
+                <outlet property="nameLabel" destination="XYJ-Qk-9tQ" id="Sh2-Cy-rPw"/>
+                <outlet property="progressView" destination="C5f-Oa-7BD" id="Lqw-a8-ZQV"/>
+                <outlet property="rr_imageView" destination="FOp-kU-hFk" id="Z7M-rm-tCO"/>
+            </connections>
+            <point key="canvasLocation" x="275.5" y="299"/>
+        </collectionViewCell>
+    </objects>
+</document>

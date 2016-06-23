@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RRMapController">
+            <connections>
+                <outlet property="mapView" destination="MXA-u1-3re" id="ool-bE-6og"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MXA-u1-3re">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="X0W-gi-wXa"/>
+                    </connections>
+                </mapView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJb-Jx-hT3">
+                    <rect key="frame" x="510" y="525" width="50" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="5ww-4Y-W4e"/>
+                        <constraint firstAttribute="width" constant="50" id="rhY-et-sDp"/>
+                    </constraints>
+                    <state key="normal" title="导航"/>
+                    <connections>
+                        <action selector="daohang:" destination="-1" eventType="touchUpInside" id="suu-qQ-qch"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MXA-u1-3re" secondAttribute="bottom" id="6Fg-PD-Sqr"/>
+                <constraint firstItem="MXA-u1-3re" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TtV-Cf-M8K"/>
+                <constraint firstAttribute="trailing" secondItem="PJb-Jx-hT3" secondAttribute="trailing" constant="40" id="WRO-aI-1Vd"/>
+                <constraint firstAttribute="bottom" secondItem="PJb-Jx-hT3" secondAttribute="bottom" constant="40" id="Zwk-Pk-mBE"/>
+                <constraint firstAttribute="trailing" secondItem="MXA-u1-3re" secondAttribute="trailing" id="cFl-yG-J5s"/>
+                <constraint firstItem="MXA-u1-3re" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="d6p-8J-jnc"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
